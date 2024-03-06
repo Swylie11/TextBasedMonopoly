@@ -5,12 +5,15 @@ class Space:
 
 
 class Player:
-    def __init__(self, name, balance, location, properties, jailed=False):
+    def __init__(self, name, location, properties, balance=1500, jailed=False):
         self.name = name
         self.balance = balance
         self.location = location
         self.properties = properties
         self.jailed = jailed
+
+    def makePayment(self, amount):
+        self.balance += amount
 
 
 class Property(Space):
