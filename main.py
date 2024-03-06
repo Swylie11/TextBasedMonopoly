@@ -94,7 +94,7 @@ class GoToJail(Space):
         self.name = name
         self.index = index
 
-
+### Working on getting this to work, being a dictionary at the moment, will change to 2d array
 spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income Tax', 'Kings Cross Station',
           f'The Angel Islington', 'Chance', 'Euston Road', 'Pentonville Road', 'Jail', 'Pall Mall', 'Electric Company',
           f'Whitehall', 'Northumberland Avenue', 'Pikmin Station', 'Bow Street', 'Community Chest',
@@ -102,6 +102,15 @@ spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income 
           f'Fenchurch Station', 'Leicester Square', 'Coventry Street', 'Water Works', 'Piccadilly', 'Go To Jail',
           f'Regent Street', 'Oxford Street', 'Community Chest', 'Bond Street', 'Liverpool street station', 'Chance',
           f'Park Lane', 'Luxury Tax', 'Mayfair']
+Brown = {"Old Kent Road":60, "Whitechapel":60}
+Lblue = {"The Angel Islington":100, "Euston Road":100, "Pentovile Road":120}
+Pink = {"Pall Mall":140, "Whitehall":140, "Northumberland Avenue":160}
+Orange = {"Bow Street":180, "Marlborough Street":180, "Vine Street":200}
+Red = {"Strand":220, "Fleet Street":220, "Trafaolgar Square":240}
+Yellow = {"Leicester Square":260, "Coventry Street":260, "Piccadilly":280}
+Green = {"Regent Street":300, "Oxford Street":300, "Bond Street":320}
+Dblue = {"Park Lane":350, "Mayfair":400}
+Stations = {"King's Cross Station": 200, "Marylebone Station":200, "Fenchurch Street Station":200, "Liverpool Street Station":200}
 
 
 def GameLoop():
