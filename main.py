@@ -99,3 +99,24 @@ spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income 
           f'Fenchurch Station', 'Leicester Square', 'Coventry Street', 'Water Works', 'Piccadilly', 'Go To Jail',
           f'Regent Street', 'Oxford Street', 'Community Chest', 'Bond Street', 'Liverpool street station', 'Chance',
           f'Park Lane', 'Luxury Tax', 'Mayfair']
+
+
+def GameLoop():
+
+    # While true
+
+    # Roll dice
+
+    # Calculate score
+
+    # Move spaces
+
+    # Check for payment
+
+    # Next player
+
+    pass
+
+
+if __name__ == "__main__":
+    GameLoop()
