@@ -1,3 +1,6 @@
+import random
+
+
 class Space:
     def __init__(self, name, index):
         self.name = name
@@ -103,13 +106,19 @@ spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income 
 
 def GameLoop():
 
-    # While true
+    playerCount = int(input('How many players will there be? '))
+
+    while True:
+        for i in range(playerCount):
+            pass
 
     # Roll dice
 
     # Calculate score
 
     # Move spaces
+
+    # Check for Go
 
     # Check for payment
 
