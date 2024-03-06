@@ -1,3 +1,6 @@
+import random
+
+
 class Space:
     def __init__(self, name, index):
         self.name = name
@@ -5,12 +8,15 @@ class Space:
 
 
 class Player:
-    def __init__(self, name, balance, location, properties, jailed=False):
+    def __init__(self, name, location, properties, balance=1500, jailed=False):
         self.name = name
         self.balance = balance
         self.location = location
         self.properties = properties
         self.jailed = jailed
+
+    def makePayment(self, amount):
+        self.balance += amount
 
 
 class Property(Space):
@@ -91,8 +97,35 @@ class GoToJail(Space):
 
 spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income Tax', 'Kings Cross Station',
           f'The Angel Islington', 'Chance', 'Euston Road', 'Pentonville Road', 'Jail', 'Pall Mall', 'Electric Company',
-          f'Whitehall', 'Northumberland Avenue', 'Marylebone Station', 'Bow Street', 'Community Chest',
+          f'Whitehall', 'Northumberland Avenue', 'Pikmin Station', 'Bow Street', 'Community Chest',
           f'Marlborough street', 'Vine Street', 'Free Parking', 'Strand', 'Chance', 'Fleet Street', 'Trafalgar Square',
           f'Fenchurch Station', 'Leicester Square', 'Coventry Street', 'Water Works', 'Piccadilly', 'Go To Jail',
           f'Regent Street', 'Oxford Street', 'Community Chest', 'Bond Street', 'Liverpool street station', 'Chance',
           f'Park Lane', 'Luxury Tax', 'Mayfair']
+
+
+def GameLoop():
+
+    playerCount = int(input('How many players will there be? '))
+
+    while True:
+        for i in range(playerCount):
+            pass
+
+    # Roll dice
+
+    # Calculate score
+
+    # Move spaces
+
+    # Check for Go
+
+    # Check for payment
+
+    # Next player
+
+    pass
+
+
+if __name__ == "__main__":
+    GameLoop()
