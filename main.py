@@ -117,16 +117,24 @@ Stations = {"King's Cross Station": 200, "Marylebone Station": 200, "Fenchurch S
             "Liverpool Street Station": 200}
 
 
-def rollDice(rollCounter, canRoll):
+def rollDice(rollCounter):
     roll1 = random.randint(1, 6)
     roll2 = random.randint(1, 6)
     rollCounter += 1
     total = roll1 + roll2
     if roll1 != roll2:
-        canRoll = False
         print(f'You rolled a {total}! ')
+        canRoll = False
+        return total
     else:
         print(f'You rolled a double! Move {total} spaces.')
+        return total
+
+
+def moveSpaces(moves, location):
+    """Get the current player location index and add the number
+    of moves to it. Loop if the index is greater than Mayfair"""
+    pass
 
 
 def GameLoop():
@@ -138,7 +146,7 @@ def GameLoop():
             rollCounter = 0
             canRoll = True
             while canRoll:
-                rollDice(rollCounter, canRoll)
+                moves = rollDice(rollCounter)
 
                 pass
 
