@@ -100,11 +100,15 @@ class GoToJail(Space):
         self.index = index
 
 
+### Working on getting this to work, being a dictionary at the moment, will change to 2d array
+spaces = ['Go', Brown[0], 'Community Chest', Brown[1], 'Income Tax', Stations[0],
+          fLblue[0], 'Chance', Lblue[1], 'Pentonville Road', 'Jail', 'Pall Mall', 'Electric Company',
+=======
+
 # Working on getting this to work, being a dictionary at the moment, will change to 2d array
 
 
-spaces = ['Go', 'Old Kent Road', 'Community Chest', 'Whitechapel Road', 'Income Tax', 'Kings Cross Station',
-          f'The Angel Islington', 'Chance', 'Euston Road', 'Pentonville Road', 'Jail', 'Pall Mall', 'Electric Company',
+
           f'Whitehall', 'Northumberland Avenue', 'Pikmin Station', 'Bow Street', 'Community Chest',
           f'Marlborough street', 'Vine Street', 'Free Parking', 'Strand', 'Chance', 'Fleet Street', 'Trafalgar Square',
           f'Fenchurch Station', 'Leicester Square', 'Coventry Street', 'Water Works', 'Piccadilly', 'Go To Jail',
@@ -176,3 +180,5 @@ def GameLoop():
 
 if __name__ == "__main__":
     GameLoop()
+
+print("Hello World!")
