@@ -1,2 +1,5 @@
-Inshallah this person does not know how to play monopoly.
-  This will be easier believe
+Sam, Mircea, Ruairi, Shreya, Victoria, and Mr .S
+
+Text Based Monopoly
+
+Inshallah we code things
