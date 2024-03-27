@@ -138,3 +138,5 @@ def GameLoop():
 
 if __name__ == "__main__":
     GameLoop()
+
+print("Hello World!")
