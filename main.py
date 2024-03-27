@@ -22,6 +22,15 @@ class Player:
     def makePayment(self, amount):
         self.balance += amount
 
+    # Move player
+    def moveSpace(self, amountMoved):
+        self.location += amountMoved
+        # Check for jail
+        if spaces[amountMoved] == "Go To Jail":
+            self.jailed = True
+            self.location = 10
+        
+
 # Base class for all property spaces
 class Property(Space):
     def __init__(self, name, index, colour, value, owner, penaltyValue, owned=False):
